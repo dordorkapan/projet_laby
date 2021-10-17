@@ -11,10 +11,12 @@ def afficher_labyrinthe(Laby:nx.Graph, nombre_colonnes:int, nombre_lignes:int):
      Itinéraire1 et itinneraire2 sont des paramètres optionnels:
      Si ils ne sont pas renseignés, on ne dessine que le labyrinthe.
     """
+    pos = []
     plt.clf() # Efface le dessin
     nx.draw(Laby, with_labels=True)
     plt.show()
-    pos[i]=[...,...]
+    for i in modes:
+        pos[i]=[i%colonnes,i//colonnes]
     
 if __name__ == "__main__":
     # Création du labyrinthe de test
